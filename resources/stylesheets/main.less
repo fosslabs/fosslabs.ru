@@ -5,6 +5,10 @@
 @linkColor: #ff6600;
 @orangeLighter: lighten(@linkColor, 30%);
 
+html, body{
+    background-color: @grayLighter;
+}
+
 header {
     background-image: @backgroundTexture;
     color: @grayLighter;
@@ -23,8 +27,8 @@ header h1, h2, h3, h4, h5, h6{
 }
 
 footer {
-    background-color: @grayLighter;
     padding: 10px 0px 10px 0px;
+    color: @grayLight;
 }
 
 footer a {
@@ -124,5 +128,32 @@ section {
 }
 
 #tech-stack img{
+    margin: 5px 5px 5px 5px;
+}
+
+.logo:hover{
+    text-decoration: none;
+}
+
+.content{
+    background-color: @white;
+    color: @gray;
+}
+
+.content .title {
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+    color: darken(@linkColor, 20%);
+}
+
+.right-menu{
+    background-color: @orangeLighter;
+    .border-radius(5px);
+    padding: 7px 7px 7px 7px;
+    font-weight: bolder;
+    font-size: 15px;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.right-menu h3{
     margin: 5px 5px 5px 5px;
 }
