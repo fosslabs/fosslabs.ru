@@ -180,12 +180,13 @@ section {
    height: 28px;
 }
 
-.news h3{
+.news h3, .team-member h3, .partner h3{
     color: darken(@linkColor, 10%);
 }
 
-.news h3 small{
+.news h3 small, .partner h3 small{
     display: block;
+    font-weight: bolder;
 }
 
 .bug{
@@ -206,7 +207,7 @@ section {
     color: @orangeLighter;
 }
 
-.news-events {
+#news-events {
     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
     background-color: @white;
 }
