@@ -49,7 +49,7 @@ hr.divider {
     background-image: -moz-linear-gradient(left, transparent, rgba(0, 0, 0, .1), transparent);
     background-image: -ms-linear-gradient(left, transparent, rgba(0, 0, 0, .1), transparent);
     background-image: -o-linear-gradient(left, transparent, rgba(0, 0, 0, .1), transparent);
-    border: 0;
+    border: 0px;
     border-image: initial;
 }
 
@@ -138,6 +138,7 @@ section {
 .content{
     background-color: @white;
     color: @gray;
+    min-height: 500px;
 }
 
 .content .title {
@@ -156,4 +157,33 @@ section {
 
 .right-menu h3{
     margin: 5px 5px 5px 5px;
+}
+
+.right-block{
+    background-color: @grayLight;
+    .border-radius(5px);
+    padding: 7px 7px 7px 7px;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+    color: @grayLighter;
+}
+
+.right-block .help-block{
+    color: @grayLighter;
+}
+
+.right-block h3{
+    margin: 5px 5px 5px 5px;
+}
+
+.right-block input{
+   width: 160px;
+   height: 28px;
+}
+
+.news h3{
+    color: darken(@linkColor, 10%);
+}
+
+.news h3 small{
+    display: block;
 }
