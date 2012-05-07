@@ -30,4 +30,22 @@ $(document).ready(function(){
         if(new Date().getTime() - lastHumanNav > TIMEOUT) /* human interact is prioritary */
             nextSlide();
         }, TIMEOUT);
+
+    //Bug feature preparation
+    $('.bug').popover({
+        animation: true,
+        placement: 'left',
+        title: 'Жуколов',
+        content: 'Нашел bug? Жми, чтобы оставить bugreport.'
+    });
+    $('.bug').hover(
+        function(){
+            $(this).addClass('color');
+            $(this).popover('show');
+        },
+        function(){
+            $(this).popover('hide');
+            $(this).removeClass('color');
+        }
+    );
 });
