@@ -147,14 +147,20 @@ section {
 }
 
 .right-menu{
-    background-color: @orangeLighter;
+    background-color: @grayLight;
     .border-radius(5px);
     padding: 7px 7px 7px 7px;
     font-weight: bolder;
     font-size: 15px;
-    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
 }
 
+.right-menu li a{
+    color: @white;
+}
+
+.right-menu li:hover a{
+    color: darken(@linkColor, 20%);
+}
 .right-menu h3{
     margin: 5px 5px 5px 5px;
 }
@@ -215,4 +221,23 @@ section {
 #news-events h2{
     color: darken(@linkColor, 20%);
     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.event .date{
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    vertical-align: middle;
+    color: @grayLighter;
+    background: @linkColor;
+}
+
+.event .trainer{
+    font-size: 16px;
+    color: @gray;
+    font-weight: bolder;
+}
+
+.event:hover .date{
+    background-color: @linkColor;
 }
